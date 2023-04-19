@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "(start next dev && start npm run codegen --watch) || (next dev & npm run codegen --watch)",
-    "build": "(start next build && start npm run codegen) || (next build & npm run codegen)",
+    "dev": "(start npm run codegen && start next dev) || (npm run codegen & next dev)",
+    "build": "(start npm run codegen && start next build) || (npm run codegen & next build)",
     "start": "next start",
     "lint": "next lint",
     "codegen": "DOTENV_CONFIG_PATH=.env.local graphql-codegen -r dotenv/config --config graphql-codegen.yml"
   },
   "dependencies": {
     "@apollo/client": "^3.7.12",
-    "@types/node": "18.15.11",
+    "@types/node": "^18.15.11",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "10.4.14",
@@ -26,6 +26,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@graphql-codegen/add": "^4.0.1",
     "@graphql-codegen/cli": "^3.3.0",
     "@graphql-codegen/typescript": "^3.0.3",
     "@graphql-codegen/typescript-compatibility": "^2.1.5",

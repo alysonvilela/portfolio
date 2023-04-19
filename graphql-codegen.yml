@@ -3,12 +3,19 @@ schema: ${NEXT_PUBLIC_GRAPHQL_ENDPOINT}
 documents: './src/graphql/**/*.graphql'
 
 generates:
-  ./src/graphql/generated.ts:
+  ./src/graphql/generated/index.generated.ts:
     plugins:
+      - add:
+          content: /* eslint-disable @typescript-eslint/no-explicit-any */
       - typescript
       - typescript-operations
       - typescript-react-apollo
     config:
+      declarationKind: interface
+      defaultScalarType: 'unknown'
+      typesPrefix: 'I'
+      enumPrefix: false
+      enumSuffix: 'Enum'
       reactApolloVersion: 3
       withHooks: true
       withHOC: false

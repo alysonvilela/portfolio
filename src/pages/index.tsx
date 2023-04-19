@@ -1,5 +1,5 @@
+import { Locale, usePersonalsQuery } from '@/graphql/generated/index.generated'
 import { Inter } from 'next/font/google'
-import { Locale, usePersonalsQuery } from '@/graphql/generated'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,8 +9,6 @@ export default function Home() {
       locales: [Locale.PtBr, Locale.En],
     },
   })
-
-  console.log({ data })
 
   return (
     <main
