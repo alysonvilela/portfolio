@@ -2,5 +2,9 @@ query Personals($locales: [Locale!] = [pt_BR, en]) {
   personals(locales: $locales) {
     description
     title
+    links
+    picture {
+      url
+    }
   }
 }

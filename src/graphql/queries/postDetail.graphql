@@ -1,0 +1,15 @@
+query PostDetail($slug: String!) {
+  portfolio(where: { slug: $slug }) {
+    title
+    description
+    content {
+      html
+    }
+    cover {
+      url
+    }
+    stacks
+    category
+    publishedAt
+  }
+}

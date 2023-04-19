@@ -1,0 +1,5 @@
+query PostsSlugs($locales: [Locale!] = [pt_BR]) {
+  portfolios(locales: $locales) {
+    slug
+  }
+}
