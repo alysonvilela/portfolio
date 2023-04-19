@@ -1,4 +1,4 @@
-schema: ${GRAPHQL_ENDPOINT}
+schema: ${NEXT_PUBLIC_GRAPHQL_ENDPOINT}
 
 documents: './src/graphql/**/*.graphql'
 
@@ -16,4 +16,4 @@ generates:
 
     hooks:
       afterAllFileWrite:
-      - eslint --fix
+        - eslint --fix

@@ -10,11 +10,13 @@ export default function Home() {
     },
   })
 
+  console.log({ data })
+
   return (
     <main
-      className={`${inter.className}flex min-h-screen flex-col items-center justify-between p-24`}
+      className={`${inter.className} flex min-h-screen flex-col items-center justify-between p-24`}
     >
-      {data?.personals[0].description}
+      {data?.personals[0].title}
     </main>
   )
 }
