@@ -5,9 +5,9 @@ export const Navigation = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="w-full mx-auto bg-black justify-center border-b border-white ">
+    <div className="w-full mx-auto bg-zinc-950 justify-center border-b border-zinc-900 ">
       <div
-        className="flex w-full flex-col lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto px-8 py-2 border-x"
+        className="flex w-full flex-col lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto px-8 py-2"
         x-data="{ open: false }"
       >
         <div className="flex items-center flex-row justify-between text-white">

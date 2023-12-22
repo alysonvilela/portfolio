@@ -3,10 +3,10 @@ import '@/styles/globals.css'
 import { ApolloProvider } from '@apollo/client'
 import type { AppProps } from 'next/app'
 
-import { Inter, Bebas_Neue } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
-const bebas = Bebas_Neue({
+const playFair = Playfair_Display({
   weight: '400',
   subsets: ['latin'],
 })
@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
         {`
           :root {
             --inter-font: ${inter.style.fontFamily};
-            --bebas-font: ${bebas.style.fontFamily};
+            --play-fair-font: ${playFair.style.fontFamily};
           }
         `}
       </style>

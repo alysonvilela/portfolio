@@ -22,7 +22,7 @@ export const Card = ({
     <Link href={`/${slug}/b`}>
       <article
         aria-labelledby="episode-1-title"
-        className="px-8 lg:px-24 py-12 items-center hover:bg-white group"
+        className="px-8 lg:px-24 py-12 items-center hover:bg-white group bg-zinc-900"
       >
         <div className="flex items-center sm:items-start">
           <div className="h-20 w-20 flex-shrink-0 overflow-hidden b sm:h-40 sm:w-40 relative">
@@ -44,7 +44,7 @@ export const Card = ({
                     {publishedAt}
                   </time>
                 </h5>
-                <h2 className="mt-2 text-lg lg:text-2xl font-semibold text-white font-display tracking-widest group-hover:text-black">
+                <h2 className="text-lg lg:text-2xl font-semibold text-white uppercase tracking-tight group-hover:text-black">
                   {title}
                 </h2>
               </div>
@@ -67,8 +67,8 @@ export const Posts = () => {
   })
 
   return (
-    <section className="border-b border-white">
-      <div className="mx-auto max-w-7xl border-x border-white">
+    <section className="bg-zinc-950 border-b border-zinc-900">
+      <div className="mx-auto max-w-7xl border-x border-zinc-900">
         <div className="mx-auto divide-y divide-white">
           {data?.portfolios.map((item) => {
             return (
