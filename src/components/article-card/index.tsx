@@ -34,7 +34,7 @@ export const ArticleCard = ({
                     {publishedAt}
                   </time>
                 </h5>
-                <h2 className="text-3xl group-hover:underline transform transition-all duration-500 ease-in-out font-bold text-brand-dark-3 uppercase tracking-wide">
+                <h2 className="text-base lg:text-3xl group-hover:underline transform transition-all duration-500 ease-in-out font-bold text-brand-dark-3 uppercase tracking-wide">
                   {title}
                 </h2>
               </div>
