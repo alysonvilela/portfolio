@@ -9,7 +9,7 @@ import { calculateYearsSince } from '@/utils/diff-years'
 import { PageSummary } from '@/components/page-summary'
 import Slide from '@/assets/slide.png'
 
-export const Portfolio = () => {
+export const Services = () => {
   const expTime = calculateYearsSince(new Date('01-01-2020'), new Date())
   return (
     <>

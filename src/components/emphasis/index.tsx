@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button'
-import { Locale, usePersonalsQuery } from '@/graphql/generated/index.generated'
 import Image from 'next/image'
 import Article from '@/assets/article.jpg'
 import Mug from '@/assets/mug.png'
@@ -12,15 +10,10 @@ interface BannerProps {
   title?: string
 }
 
-export const Banner = ({ title = 'Veja!' }: BannerProps) => {
-  // const { data } = usePersonalsQuery({
-  //   variables: {
-  //     locales: [Locale.PtBr, Locale.En],
-  //   },
-  // })
+export const Emphasis = ({ title = 'Veja!' }: BannerProps) => {
   return (
     <>
-      <section className="overflow-hidden">
+      <section className="overflow-hidden fade">
         <section className="pb-8 lg:pb-20 mx-auto max-w-7xl items-center border-y-0">
           <div className="relative aspect-[10/15] md:aspect-[16/7]">
             <Image

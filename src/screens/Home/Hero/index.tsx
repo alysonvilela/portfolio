@@ -1,7 +1,4 @@
 import { Button } from '@/components/ui/button'
-import { Locale, usePersonalsQuery } from '@/graphql/generated/index.generated'
-import Image from 'next/image'
-
 export const Hero = () => {
   // const { data } = usePersonalsQuery({
   //   variables: {
@@ -106,7 +103,10 @@ export const Hero = () => {
                               Adaptativo. Inclusivo. Exclusivo. Digital
                             </p>
                             <div className="flex flex-row gap-4 flex-wrap mt-6 justify-center lg:justify-start">
-                              <Button variant={'link'} className="ml-[-30px]">
+                              <Button
+                                variant={'link'}
+                                className="md:ml-[-30px]"
+                              >
                                 Redes sociais
                               </Button>
                               <Button variant={'outline'} className="">

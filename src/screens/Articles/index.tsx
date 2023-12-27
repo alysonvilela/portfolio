@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navigation } from '../Home/Navigation'
-import { Banner } from '../Home/Banner'
+import { Emphasis } from '../../components/emphasis'
 import { PageTitle } from '@/components/page-title'
 
 import { PageSummary } from '@/components/page-summary'
@@ -42,7 +42,7 @@ export const Articles = () => {
         </div>
       </section>
 
-      <Banner title="Veja também" />
+      <Emphasis title="Veja também" />
     </>
   )
 }
