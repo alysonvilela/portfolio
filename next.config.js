@@ -9,6 +9,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.birobirobiro.dev',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   async rewrites() {

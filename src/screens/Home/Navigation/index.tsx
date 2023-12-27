@@ -12,7 +12,10 @@ export const Navigation = () => {
         className="flex w-full flex-col lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto px-8 py-2"
         x-data="{ open: false }"
       >
-        <div className="flex items-center flex-row justify-between text-brand-dark-2">
+        <Link
+          href={'/'}
+          className="flex items-center flex-row justify-between text-brand-dark-2"
+        >
           <a className="group block flex-shrink-0">
             <div className="flex items-center">
               <div>
@@ -67,7 +70,7 @@ export const Navigation = () => {
               ></path>
             </svg>
           </button>
-        </div>
+        </Link>
         <nav
           className={`${
             open ? 'flex' : 'hidden'
