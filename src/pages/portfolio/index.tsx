@@ -1,3 +1,3 @@
-import { Cases } from '@/screens/Cases'
+import { Portfolio } from '@/screens/Portfolio'
 
-export default Cases
+export default Portfolio
