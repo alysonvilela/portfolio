@@ -108,6 +108,27 @@ module.exports = {
         screens: "url('/path-to/image.png')",
       },
       colors: {
+        brand: {
+          brown: {
+            1: '#cab6a4',
+            2: '#b29f8c',
+            3: '#a18d7a',
+          },
+          light: {
+            1: '#FDFDFD',
+            2: '#f2edeb',
+            3: '#EEE6E2',
+          },
+          dark: {
+            1: '#595b58',
+            2: '#464A45',
+            3: '#000000',
+          },
+          accent: {
+            blue: '#5C808E',
+            rose: '#EEE3E1',
+          },
+        },
         accent: {
           50: '#E5E5FF',
           100: '#CCCCFF',
@@ -173,6 +194,7 @@ module.exports = {
           to: { height: '0' },
         },
       },
+
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',

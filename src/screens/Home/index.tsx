@@ -6,6 +6,7 @@ import { Hero } from './Hero'
 import { Title } from './Title'
 import { Navigation } from './Navigation'
 import { Posts } from './Posts'
+import { Banner } from './Banner'
 // const Navigation = dynamic(
 //   () => import('./Navigation').then((mod) => mod.Navigation),
 //   {
@@ -19,6 +20,7 @@ export const Home = () => {
     <>
       <Navigation />
       <Hero />
+      <Banner />
       <Title />
       <Posts />
     </>

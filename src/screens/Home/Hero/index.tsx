@@ -3,14 +3,14 @@ import { Locale, usePersonalsQuery } from '@/graphql/generated/index.generated'
 import Image from 'next/image'
 
 export const Hero = () => {
-  const { data } = usePersonalsQuery({
-    variables: {
-      locales: [Locale.PtBr, Locale.En],
-    },
-  })
+  // const { data } = usePersonalsQuery({
+  //   variables: {
+  //     locales: [Locale.PtBr, Locale.En],
+  //   },
+  // })
   return (
-    <section className="overflow-hidden bg-zinc-950">
-      <section className="bg-zinc-950 py-8 lg:py-10 mx-auto px-8 lg:px-24 max-w-7xl items-center border-y-0">
+    <section className="overflow-hidden">
+      <section className="py-8 lg:py-10 mx-auto px-8 lg:px-24 max-w-7xl items-center border-y-0">
         <div
           x-data="{
                 skip: 1,
@@ -93,30 +93,37 @@ export const Hero = () => {
                       <div>
                         <div>
                           <div className="max-w-xl lg:pr-24 text-center lg:text-left">
-                            <span className="text-white 500 text-xs">
+                            <span className="text-brand-dark-1 500 text-xs tracking-wide">
                               FEATURED
                             </span>
 
-                            <h2 className="font-semibold text-white text-3xl font-display lg:text-6xl">
-                              {data?.personals[0]?.title}
+                            <h2 className="font-semibold text-brand-dark-3 text-3xl font-display lg:text-6xl">
+                              {/* {data?.personals[0]?.title} */}
+                              Impacto
                             </h2>
                             <p className="text-zinc-400 mt-5">
-                              {data?.personals[0]?.description}
+                              {/* {data?.personals[0]?.description} */}
+                              Adaptativo. Inclusivo. Exclusivo. Digital
                             </p>
-                            <div className="flex flex-wrap mt-6 justify-center lg:justify-start">
-                              <Button variant={'secondary'}>Saiba mais</Button>
+                            <div className="flex flex-row gap-4 flex-wrap mt-6 justify-center lg:justify-start">
+                              <Button variant={'link'} className="ml-[-30px]">
+                                Redes sociais
+                              </Button>
+                              <Button variant={'outline'} className="">
+                                Cases de sucesso
+                              </Button>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="relative max-w-[200px] aspect-square">
+                      {/* <div className="relative max-w-[200px] aspect-square">
                         <Image
                           src={data?.personals[0].picture?.url as string}
                           alt=""
                           fill
                           className="absolute"
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </section>
                   <button

@@ -7,5 +7,5 @@ interface IPostDetailProps {
 
 export const PostDetail = ({ post }: IPostDetailProps) => {
   const name = post?.title
-  return <div className="text-white">{name}</div>
+  return <div className="text-brand-dark-2">{name}</div>
 }

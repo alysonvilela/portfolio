@@ -22,9 +22,9 @@ export const Card = ({
     <Link href={`/${slug}/b`}>
       <article
         aria-labelledby="episode-1-title"
-        className="px-8 lg:px-24 py-12 items-center hover:bg-white group bg-zinc-900"
+        className="px-8 lg:px-24 py-12 items-center hover:bg-brand-light-2/80 transform transition-all duration-500 ease-in-out group bg-brand-light-2/20"
       >
-        <div className="flex items-center sm:items-start">
+        <div className="flex items-center sm:items-start scaling">
           <div className="h-20 w-20 flex-shrink-0 overflow-hidden b sm:h-40 sm:w-40 relative">
             <Image
               src={coverUrl}
@@ -44,13 +44,13 @@ export const Card = ({
                     {publishedAt}
                   </time>
                 </h5>
-                <h2 className="text-lg lg:text-2xl font-semibold text-white uppercase tracking-tight group-hover:text-black">
+                <h2 className="text-lg font-semibold text-brand-dark-1 uppercase tracking-wide group-hover:text-black">
                   {title}
                 </h2>
               </div>
             </div>
             <div>
-              <p className="mt-1 text-white/60 font-light line-clamp-1 lg:text-lg md:line-clamp-2 group-hover:text-black">
+              <p className="mt-1 text-brand-dark-1/60 font-light line-clamp-1 lg:text-lg md:line-clamp-2 group-hover:text-black">
                 {description}
               </p>
             </div>
@@ -67,8 +67,8 @@ export const Posts = () => {
   })
 
   return (
-    <section className="bg-zinc-950 border-b border-zinc-900">
-      <div className="mx-auto max-w-7xl border-x border-zinc-900">
+    <section className="bg-white">
+      <div className="mx-auto max-w-7xl">
         <div className="mx-auto divide-y divide-white">
           {data?.portfolios.map((item) => {
             return (
