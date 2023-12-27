@@ -1,0 +1,10 @@
+query Articles {
+  articles(where: { content: { active: true } }) {
+    content {
+      slug
+      title
+      summary
+    }
+    createdAt
+  }
+}

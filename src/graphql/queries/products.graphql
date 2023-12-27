@@ -1,0 +1,12 @@
+query Products {
+  products(where: { content: { active: true } }) {
+    content {
+      title
+    }
+    link
+    tags
+    product_image {
+      url
+    }
+  }
+}

@@ -20,8 +20,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/:slug*/b',
-        destination: '/blog/:slug*', // The :path parameter is used here so will not be automatically passed in the query
+        source: '/:slug*/a',
+        destination: '/articles/:slug*', // The :path parameter is used here so will not be automatically passed in the query
       },
     ]
   },

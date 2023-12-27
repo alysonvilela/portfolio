@@ -1,0 +1,8 @@
+query ArticleDetail($slug: String!) {
+  articles(where: { content: { slug: $slug, active: true } }) {
+    content {
+      title
+    }
+    md
+  }
+}

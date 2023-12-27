@@ -22,7 +22,7 @@ export const Home = () => {
       <Hero />
       <Banner />
       <Title />
-      <Posts />
+      {/* <Posts /> */}
     </>
   )
 }

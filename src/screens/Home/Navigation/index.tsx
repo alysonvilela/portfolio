@@ -1,5 +1,4 @@
-import { Button, buttonVariants } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -13,10 +12,11 @@ export const Navigation = () => {
         x-data="{ open: false }"
       >
         <Link
+          prefetch={false}
           href={'/'}
           className="flex items-center flex-row justify-between text-brand-dark-2"
         >
-          <a className="group block flex-shrink-0">
+          <div className="group block flex-shrink-0">
             <div className="flex items-center">
               <div>
                 <svg
@@ -37,12 +37,12 @@ export const Navigation = () => {
                 </svg>
               </div>
               <div className="ml-3">
-                <p className="uppercase italic font-medium text-brand-dark-2 group-hover:text-gray-300">
-                  a.v.
+                <p className="font-display font-medium text-brand-dark-3 group-hover:text-gray-300">
+                  Alyson Vilela
                 </p>
               </div>
             </div>
-          </a>
+          </div>
 
           <button
             onClick={() => setOpen((prev) => !prev)}
@@ -77,14 +77,18 @@ export const Navigation = () => {
           } flex-col items-center lg:flex lg:flex-row lg:justify-start lg:mt-0 gap-3 lg:gap-6 lg:p-0 lg:px-0 md:pb-0 opacity-100 p-4 px-5`}
         >
           <Button variant={'link'} asChild>
-            <Link href="/about">About</Link>
+            <Link prefetch={false} href="/about">
+              About
+            </Link>
           </Button>
           <Button variant={'link'} asChild>
-            <Link href="/contact">Contact</Link>
+            <Link prefetch={false} href="/contact">
+              Contact
+            </Link>
           </Button>
 
           <Button variant={'link'} asChild>
-            <Link href="#">
+            <Link prefetch={false} href="#">
               <span>Online</span>
             </Link>
           </Button>
