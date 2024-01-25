@@ -1,4 +1,3 @@
-import { usePostCardQuery } from '@/graphql/generated/index.generated'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -61,33 +60,33 @@ export const Card = ({
   )
 }
 
-export const Posts = () => {
-  const { data } = usePostCardQuery({
-    variables: {},
-  })
+// export const Posts = () => {
+//   const { data } = usePostCardQuery({
+//     variables: {},
+//   })
 
-  return (
-    <section className="bg-white">
-      <div className="mx-auto max-w-7xl">
-        <div className="mx-auto divide-y divide-white">
-          {data?.portfolios.map((item) => {
-            return (
-              <Card
-                key={item.slug}
-                slug={item.slug}
-                coverUrl={item.cover.url}
-                description={item.description}
-                title={item.title}
-                publishedAt={String(
-                  new Intl.DateTimeFormat('pt-BR').format(
-                    new Date(item.publishedAt as string)
-                  )
-                )}
-              />
-            )
-          })}
-        </div>
-      </div>
-    </section>
-  )
-}
+//   return (
+//     <section className="bg-white">
+//       <div className="mx-auto max-w-7xl">
+//         <div className="mx-auto divide-y divide-white">
+//           {data?.portfolios.map((item) => {
+//             return (
+//               <Card
+//                 key={item.slug}
+//                 slug={item.slug}
+//                 coverUrl={item.cover.url}
+//                 description={item.description}
+//                 title={item.title}
+//                 publishedAt={String(
+//                   new Intl.DateTimeFormat('pt-BR').format(
+//                     new Date(item.publishedAt as string)
+//                   )
+//                 )}
+//               />
+//             )
+//           })}
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }

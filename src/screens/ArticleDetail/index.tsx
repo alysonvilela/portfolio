@@ -1,7 +1,6 @@
 import { IArticleDetailQuery } from '@/graphql/generated/index.generated'
 import React from 'react'
 import { Navigation } from '../Home/Navigation'
-import { PageTitle } from '@/components/page-title'
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote'
 
 interface IPostDetailProps {
