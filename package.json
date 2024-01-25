@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "(start npm run codegen && start npm run next dev) || (npm run codegen & next dev)",
-    "build": "(start npm run codegen && start npm run next build) || (npm run codegen & next build)",
+    "next:build": "next build",
+    "next:dev": "next dev",
+    "dev": "run-s codegen next:dev",
+    "build": "run-s codegen next:build",
     "start": "next start",
     "lint": "next lint",
     "codegen": "DOTENV_CONFIG_PATH=.env.local graphql-codegen -r dotenv/config --config graphql-codegen.yml"
