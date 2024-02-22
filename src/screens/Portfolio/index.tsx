@@ -17,11 +17,11 @@ export const Portfolio = () => {
 
       <PageTitle title="Portfolio" />
       <PageSummary
-        title="Produtos digitais,"
-        description={`Durante os últimos ${expTime} anos, tive a honra de colaborar no
-            desenvolvimento de produtos digitais, abrangendo uma diversidade de
-            setores e áreas de atuação. Cada projeto representa a paixão pela
-            inovação e a busca incessante pelo aprendizado e excelência.`}
+        title="Hello world!"
+        description={`
+            Over the last ${expTime} years, I have had the honor of collaborating in the development of digital products, covering a diversity of sectors and areas of activity. Each project represents the passion for innovation and the relentless pursuit of learning and excellence.
+            
+            `}
       />
       <section className="overflow-hidden">
         <div className="mx-auto max-w-7xl w-full px-8 lg:px-24 pb-12">
